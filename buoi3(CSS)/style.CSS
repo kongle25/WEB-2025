@@ -1,0 +1,19 @@
+p {
+  color: blue;
+}
+h1 {
+  color: red;
+}
+h2 {
+  color: pink;
+}
+.red {
+  color: aqua;
+}
+.content {
+  color: aqua;
+  background-color: yellow;
+  padding: 20px;
+  border-color: black;
+  border: 2px;
+}
