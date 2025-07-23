@@ -1,50 +1,51 @@
-body{
-    background-color: #D5EBF8;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-.dangnhap{
-    background-color: white;
-    width: 250px;
-    padding: 30px;
-    border-radius: 8px;
-    margin: 100px auto;
-    box-shadow: 0 0 15px rgb(136, 135, 135);
+body {
+  background-color: #d5ebf8;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.dangnhap h2{
-    margin-bottom: 20px;
+.dangnhap {
+  background-color: white;
+  width: 250px;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 100px auto;
+  box-shadow: 0 0 15px rgb(136, 135, 135);
+}
+.dangnhap h2 {
+  margin-bottom: 20px;
 }
 
-.dangnhap input[type=text],
-.dangnhap input[type=password]{
-    width: 93.5%;
-    padding: 7px;
-    margin: 8px 0;
-    border-radius: 3px;
-    border: 1px solid rgb(0, 0, 0);
+.dangnhap input[type="text"],
+.dangnhap input[type="password"] {
+  width: 93.5%;
+  padding: 7px;
+  margin: 8px 0;
+  border-radius: 3px;
+  border: 1px solid rgb(0, 0, 0);
 }
-.content{
-    font-size: 15px;
+.content {
+  font-size: 15px;
 }
-.dangnhap button{
-    background-color: #007BFD;
-    width: 100%;
-    border-radius: 3px;
-    padding: 6px;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
-    font-weight: bolder;
+.dangnhap button {
+  background-color: #007bfd;
+  width: 100%;
+  border-radius: 3px;
+  padding: 6px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
 }
-.dangnhap p{
-    font-size: 13px;
-    margin-top: 1spx;
+.dangnhap p {
+  font-size: 13px;
+  margin-top: 1spx;
 }
-.dangnhap a{
-    color: #1877f2;
-    text-decoration: none;
-    font-weight: bold;
+.dangnhap a {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: bold;
 }
-.dangnhap a:hover{
-    text-decoration: underline;
+.dangnhap a:hover {
+  text-decoration: underline;
 }
