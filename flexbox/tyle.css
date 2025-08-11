@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100vw;
+  height: 800px;
+  border: 5px solid grey;
+  display: flex;
+  /* flex-direction: row; căn chỉnh theo hàng ngang */
+  /* flex-direction: column; căn chỉnh theo hàng dọc */
+  /*flex-wrap: wrap;  căn chỉnh các phần tử con xuống dòng nếu không đủ chỗ*/
+  /* flex-wrap: nowrap;  không xuống dòng, các phần tử sẽ bị thu nhỏ*/
+  /* flex-wrap: wrap-reverse;  xuống dòng nhưng ngược lại */
+  flex-flow: row wrap; /* kết hợp cả hai thuộc tính trên */
+  /*justify-content: center;  căn chỉnh các phần tử con theo chiều ngang */
+  /* justify-content: flex-start; căn chỉnh các phần tử con về bên trái */
+  /* justify-content: flex-end; căn chỉnh các phần tử con về bên phải */
+  /* justify-content: space-between; căn chỉnh các phần tử con đều nhau */
+  /*justify-content: space-around;  căn chỉnh các phần tử con đều nhau và có khoảng cách đều */
+  /*justify-content: space-evenly;  căn chỉnh các phần tử con đều nhau và có khoảng cách đều, nhưng không tính biên */
+  /*align-items: center;   căn chỉnh các phần tử con theo chiều dọc */
+  /* align-items: flex-start; căn chỉnh các phần tử con về bên trên */
+  /* align-items: flex-end; căn chỉnh các phần tử con về bên dưới */
+  /* align-items: baseline; căn chỉnh các phần tử con theo đường cơ sở của chữ */
+  /* align-items: stretch;  kéo dài các phần tử con để đầy đủ chiều cao của container */
+  /* align-content: center; căn chỉnh các dòng theo chiều dọc */
+}
+.box {
+  height: 200px;
+  padding: 10px;
+
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto; */
+  flex: 1 1 auto; /* kết hợp các thuộc tính trên */
+  /**
+  flex-grow: 1; // phần tử sẽ chiếm hết không gian còn lại
+  flex-shrink: 1; // phần tử sẽ thu nhỏ nếu không đủ chỗ
+  flex-basis: 100px;  // chiều rộng tối thiểu của phần tử
+  **/
+}
+.box p {
+  font-size: 20px;
+  color: white;
+}
+.box-1 {
+  background-color: red;
+  order: 3; /* thay đổi thứ tự của phần tử */
+}
+.box-2 {
+  background-color: green;
+  flex-grow: 5;
+}
+.box-3 {
+  background-color: blue;
+}
