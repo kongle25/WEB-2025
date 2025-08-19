@@ -1,73 +1,173 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Profile Layout</title>
+    <title>Profile Card</title>
     <style>
       body {
-        <div>
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #6ec6ff; /* nền xanh demo */
-                  }
-        </div>
-
-      /* Khung ngoài */
+        background: linear-gradient(to right, #a3d3ff, #ffffff);
+        font-family: Arial, sans-serif;
+      }
       .card {
         width: 800px;
-        border-radius: 15px;
-        overflow: hidden; /* quan trọng: ẩn phần thừa, giữ bo tròn mượt */
-        background: #111;
+        margin: 50px auto;
+        background: #1c1c1c;
         color: white;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       }
-
-      /* Cover */
-      .cover {
+      .banner {
         width: 100%;
-        height: 200px;
-        background: url("https://picsum.photos/1200/500") center/cover no-repeat;
-        /* KHÔNG để border-radius ở đây nữa */
+        height: 150px;
+        background: url("https://via.placeholder.com/800x200") center/cover;
+        position: relative;
       }
-
-      /* Profile info */
-      .profile {
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        background: #111;
-      }
-
-      /* Avatar */
-      .profile img {
+      .avatar {
+        position: absolute;
+        bottom: -40px;
+        left: 30px;
+        border: 5px solid #1c1c1c;
+        border-radius: 50%;
+        overflow: hidden;
         width: 90px;
         height: 90px;
-        border-radius: 50%;
+      }
+      .avatar img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        border: 3px solid #111;
-        margin-right: 15px;
-        margin-top: -40px; /* avatar trồi lên */
       }
-
-      .profile-info h3 {
-        margin: 0;
-        font-size: 24px;
+      .profile {
+        padding: 60px 30px 20px;
       }
-      .profile-info p {
+      .profile h2 {
         margin: 0;
-        font-size: 14px;
+        font-size: 22px;
+      }
+      .profile p {
+        margin: 5px 0 15px;
         color: #bbb;
+      }
+      .buttons {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      .btn {
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .btn.follow {
+        background: #5a4fff;
+        color: white;
+      }
+      .btn.message {
+        background: transparent;
+        border: 1px solid #aaa;
+        color: white;
+      }
+      .stats {
+        display: flex;
+        justify-content: space-around;
+        background: #2c2c2c;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+      .stat {
+        text-align: center;
+      }
+      .stat span {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        color: #7c7cff;
+      }
+      .bio {
+        background: #2c2c2c;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      .socials {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .socials a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      .lastpost {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .lastpost img {
+        width: 200px;
+        border-radius: 10px;
+      }
+      .lastpost button {
+        margin-top: 10px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: none;
+        background: #5a4fff;
+        color: white;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <div class="card">
-      <div class="cover"></div>
+      <div class="banner"></div>
+      <div class="avatar">
+        <img src="https://via.placeholder.com/100" alt="Avatar" />
+      </div>
       <div class="profile">
-        <img src="https://picsum.photos/200" alt="avatar" />
-        <div class="profile-info">
-          <h3>Son Tung M-TP</h3>
-          <p>Nghệ sĩ</p>
+        <h2>Son Tung M-TP</h2>
+        <p>Nghệ sĩ</p>
+
+        <div class="buttons">
+          <button class="btn follow">Follow</button>
+          <button class="btn message">Message</button>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span>1.522</span>Post</div>
+          <div class="stat"><span>6,4Tr</span>Follower</div>
+          <div class="stat"><span>0</span>Following</div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><span>66,6Tr</span>Likes</div>
+          <div class="stat"><span>100Tr</span>Comments</div>
+          <div class="stat"><span>100Tr</span>Saved</div>
+        </div>
+
+        <div class="bio">
+          <strong>Bio:</strong>
+          ĐỪNG LÀM TRÁI TIM ANH ĐAU 💔<br />
+          ✖ WATCH NOW 🎧
+        </div>
+
+        <div class="socials">
+          <a href="#">🌐</a>
+          <a href="#">📘</a>
+          <a href="#">💼</a>
+          <a href="#">📷</a>
+          <a href="#">▶</a>
+        </div>
+
+        <div class="lastpost">
+          <p>Last Post</p>
+          <img src="https://via.placeholder.com/200x200" alt="Last Post" />
+          <br />
+          <button>View</button>
         </div>
       </div>
     </div>
