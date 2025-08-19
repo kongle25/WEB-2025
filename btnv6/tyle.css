@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://img.thuthuatphanmem.vn/uploads/2018/10/04/hinh-anh-troi-xanh-dep_022456787.jpg"); /* link ảnh */
+  /* không lặp ảnh */
+  background-size: cover; /* ảnh phủ kín màn hình */
+  /* căn giữa ảnh */
+  height: 1000px; /* full chiều cao màn hình */
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  background-color: black;
+  border-radius: 50px;
+  width: 1200px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.avt {
+  position: absolute;
+  top: 1px;
+}
+.bia {
+  width: 100%;
+  height: 300px;
+  border-radius: 50px;
+  border: 10px solid black;
+}
+.avt1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 12px solid black;
+  position: absolute;
+  top: 190px;
+  left: 90px;
+}
+.st {
+  margin-top: -300px;
+  margin-left: 260px;
+  font-size: 35px;
+  border-radius: 50px;
+  border: 10px solid black;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 35px;
+}
+.ns {
+  margin-top: -15px;
+  margin-left: 305px;
+  font-size: 20px;
+  color: rgb(198, 195, 195);
+}
+.fl {
+  position: absolute;
+  top: 380px;
+  left: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.flow,
+.mes {
+  color: white;
+
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.flow {
+  border: 1px solid #5046e5;
+  background-color: black;
+  border-radius: 10px;
+  width: 170px;
+  height: 50px;
+}
+.mes {
+  border: 1px solid #5046e5;
+  background-color: black;
+  border-radius: 10px;
+  width: 170px;
+  height: 50px;
+}
+.Bio {
+  background-color: #262626;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  width: 170px;
+  height: 196px;
+  border: 1px solid #262626;
+  font-size: 15px;
+  line-height: 1.4em;
+}
+
+.tong {
+  position: absolute;
+  top: 420px;
+  left: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  padding: 20px;
+  font-size: 20px;
+}
+.tong h2 {
+  color: #5046e5;
+  font-weight: bold;
+}
+.tong p {
+  color: white;
+  font-size: 15px;
+}
+.tong .tt h2 {
+  font-size: 38px;
+}
+.tt {
+  color: white;
+
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 100px;
+  text-align: center;
+}
+.tt2 {
+  background-color: #262626;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 100px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.link {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+
+  top: 640px;
+  left: 350px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  background-color: #262626;
+  padding: 35px 15px;
+  padding-right: 150px;
+  border-radius: 10px;
+  font-size: 30px;
+  border: 1px solid #262626;
+}
+.link p {
+  font-size: 20px;
+  margin-top: 8px;
+}
+.link a {
+  color: #5046e5;
+  text-decoration: none;
+  font-size: 30px;
+}
+.view {
+  position: absolute;
+  top: 420px;
+  left: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #262626;
+  padding: 10px;
+  border-radius: 10px;
+  width: 210px;
+  height: 324px;
+}
+.view .lp {
+  margin-top: -206px;
+  margin-right: -115px;
+  background-color: rgba(0, 0, 0, 0.644);
+  color: white;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.view img {
+  width: 190px;
+  height: 2000px;
+  border-radius: 5px;
+}
+.view p {
+  margin-top: 187px;
+  margin-right: 85px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.viw {
+  margin-top: 40px;
+  background-color: #262626;
+  color: white;
+  padding: 5px 80px;
+  border-radius: 5px;
+  border: 1px solid #5046e5;
+  cursor: pointer;
+}
+.Bio i,
+.Bio p {
+  display: inline-block;
+  margin-right: 5px;
+}
+.bio-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid #888; /* gạch full */
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+}
+.flow:hover,
+.mes:hover {
+  background-color: #5046e5;
+  color: white;
+
+  font-weight: bold;
+  transform: translateY(-4px);
+}
+.viw:hover {
+  background-color: #5046e5;
+  color: white;
+  font-weight: bold;
+  transform: translateY(-4px);
+}
+img {
+  cursor: pointer;
+}
+a:hover {
+  color: white;
+  transform: translateY(-4px);
+}
